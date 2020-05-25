@@ -1,0 +1,51 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22,25,35);
+    .container {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        .msg, h1 {
+            font-family: 'Comfortaa', cursive;
+            font-size: 36px;
+            color:#ffffff;
+            padding: 0;
+            margin: 50px 20px;
+        }
+        .msg:empty {
+            padding: 0;
+            margin: 50px 20px;
+            background-color: transparent;
+        }
+        #buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0;
+            .btn {
+                cursor: pointer;
+                margin: 30px;
+                border: none;
+                background-color: transparent;
+                i {
+                    font-size: 200px;
+                }
+                .fa-hand-rock {
+                    color: yellow;
+                }
+                .fa-hand-paper{
+                    color: orange;
+                }
+                .fa-hand-scissors {
+                    color: orangered;
+                }
+            }
+        }
+    }  
+}
